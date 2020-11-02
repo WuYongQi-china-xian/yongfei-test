@@ -21,4 +21,4 @@ jobs:
         uses: actions/checkout@v2
       - name: run test
         run: |
-          go test -timeout 10m -v yongfei-test/yongfei-test/test
+          go test -timeout 10m -v ./test
