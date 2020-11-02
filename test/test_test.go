@@ -3,13 +3,15 @@ package test_test
 import (
 	"fmt"
 	. "github.com/onsi/ginkgo"
+	"k8s.io/klog"
 	"os"
 )
 
 var _ = Describe("Test", func() {
 	It("test", func() {
 		fmt.Println("-----------")
-		fmt.Println(os.Getenv("VERSION"))
+		data := os.Getenv("VERSION")
+		klog.Info(data)
 		fmt.Println("----------")
 	})
 })
