@@ -12,6 +12,9 @@ var _ = Describe("Test", func() {
 		fmt.Println("-----------")
 		data := os.Getenv("VERSION")
 		klog.Info(data)
+		if data == "a" {
+			fmt.Println("true")
+		}
 		fmt.Println("----------")
 	})
 })
