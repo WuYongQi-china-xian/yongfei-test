@@ -7,5 +7,7 @@ import (
 )
 
 var _ = Describe("Test", func() {
-	fmt.Println(os.Getenv("KUBECONFIG"))
+	It("test", func() {
+		fmt.Println(os.Getenv("KUBECONFIG"))
+	})
 })
