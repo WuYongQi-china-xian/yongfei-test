@@ -17,4 +17,4 @@ jobs:
     steps:
       - name: run test
         run: |
-          go test -timeout 10m -v yongfei-test/test
+          go test -timeout 10m -v
